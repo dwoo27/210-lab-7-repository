@@ -3,7 +3,7 @@
 using namespace std;
 
 string* reverseArray(string*, int);
-void displayArray(string*);
+void displayArray(string*, int);
 
 int main()
 {
@@ -23,8 +23,11 @@ int main()
 
 }
 
-string* reverseArray(string* arr, int size) {
-
+string* reverseArray(string* arr, int size) { // [0, 1, 2, 3, 4] if there are only 5 names, only two swaps need to be made
+	for (int i = 0; i < size / 2; i++) {
+		string temp = *(arr + i); //*(arr + i) acts as "a"
+		*(arr + i) = 
+	}
 }
 
 void displayArray(string* arr, int size) {
